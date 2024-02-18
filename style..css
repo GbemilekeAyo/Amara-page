@@ -1,0 +1,442 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    background: #000;
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+
+
+.header{
+    width: 100%;
+    box-shadow: rgba(35, 34, 34, 0.2) 0px 2px 8px 0px;
+}
+nav{
+    display: flex;
+    padding: 3rem 2% 0 3rem;
+    justify-content: space-between;
+    align-items: center;
+    }
+nav img{
+    width: 150px;
+}
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 10px;
+    position: relative;
+}
+.nav-links ul li a{
+    color: #14bc14;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: 0.4s ease-in;
+}
+
+.nav-links ul li a:hover{
+ color: #ff0000;
+ cursor: pointer;
+}
+
+nav .fa {
+    display: none;
+}
+
+.socials i{
+    font-size: 1.5rem;
+    color: #000;
+    padding: 0.8rem;
+    display: none;
+}
+
+
+
+/*======= MEDIA QUARIES FOR SMALL SCREENS=========*/
+@media screen and (max-width: 700px){
+ nav{
+  padding: 1rem;
+ }
+
+  nav img{
+    width: 150px;
+  }
+
+.nav-links ul li{
+   display: block;
+}
+.nav-links{
+   position: fixed;
+   background: #14bc14;
+   width: 200px;
+   height: 100vh;
+   top: 0;    
+   right: -200px;
+   text-align: left;
+   z-index: 2;
+   transition: 1s;
+}
+
+.nav-links ul li a{
+    color: #000;
+    font-size: 1rem;
+}
+
+.nav-links ul li a:hover{
+    color: #ff0000;
+}
+
+nav .fa{
+   display: block;
+   color: #fff;
+   margin: 20px;
+   font-size: 22px;
+   cursor: pointer
+}
+.nav-links ul li{
+   padding: 20px;
+}
+
+.socials .fa{
+    display: block;
+}
+
+.socials{
+    margin-left: 1rem;
+}
+
+.socials i{
+    display: inline-block;
+    margin-top: 13rem;
+}
+
+nav .fa-bars{
+    background: #14bc14;
+    padding: 10px;
+    border-radius: 5px;
+    color: #290202;
+}
+
+nav .fa-times{
+    width: 19%;
+    background: #000;
+    padding: 10px;
+    border-radius: 5px;
+    color:#14bc14;
+}
+
+}
+
+
+
+
+/* ============ HEADER ======== */
+
+header{
+    width: 100%;
+    height: 100%;
+     display: grid;
+     place-items: center;
+     text-align: center;
+}
+
+
+.image{
+    width:100%;
+    height: 50vh;
+    background-image: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.9)) , url(./Image/bio.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-top: -15rem;
+}
+
+.header-content h1{
+ font-size: 2.5rem;
+ margin-top: 1rem;
+ font-weight: 600;
+ text-transform: uppercase;
+}
+
+.header-content p{
+    font-size: 1.5rem;
+      color:#14bc14 ;
+     
+   }
+
+
+
+
+
+
+
+
+/*========= MEDIA QUARIES FOR SMALL SCREEN ========== */
+
+@media screen and (max-width:694px){
+    .header-content h1{
+        font-size: 1.7rem;
+       margin-top: 0;
+       }
+       
+       .header-content p{
+           font-size: 1rem;
+           margin-top: 0.3rem;
+     }
+     header{
+        margin-top: 2rem;
+     }
+
+   
+  
+
+       
+}
+
+
+
+
+/*============ PORTFOLIO SECTION ============*/
+
+.portfolio{
+    width: 100%;
+    height: 100%;
+    margin: 5rem auto;
+    
+}
+
+.portfolio h1{
+    text-align: center;
+    font-size: 2rem;
+    color: #fff;
+    text-transform: uppercase;
+
+}
+
+.portfolio-col{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 5rem 0 0 0;
+}
+
+.portfolio-row{
+    width: 500px;
+    height: 450px;
+    background: #14bc14;
+    padding: 2rem;
+    border-radius: 10px;
+}
+
+.portfolio-row img{
+    width: 100%;
+    border-radius: 10px;
+}
+
+.portfolio-row a{
+    font-size: 1.5rem;
+    padding-top: 1.5rem;
+    color: #fff;
+    text-decoration: none;
+    transition: 0.4s ease-in;
+}
+
+.portfolio-row a i{
+    margin-right: 0.4rem;
+}
+
+.portfolio-row a:hover{
+    color: #290202;
+
+    text-decoration: underline;
+}
+
+
+
+/* =========== MEDIA QUARIES FOR MEDIUM SCREEN =============== */
+
+@media screen and (max-width:1024px){
+    .portfolio{
+     margin-top: 3rem;
+    }
+ 
+     .portfolio-col {
+         display: block;
+     }
+ 
+     .portfolio-row{
+         width: 80%;
+         height: 100%;
+         margin: 0 auto;
+         margin-bottom: 2rem;
+     }
+ 
+     .portfolio-row a{
+         font-size: 1.3rem;
+         
+     }
+ 
+     .portfolio h1{
+         font-size: 1.7rem;
+     
+     }
+ }
+
+
+
+
+
+
+/* =========== MEDIA QUARIES FOR SMALL SCREEN =============== */
+
+@media screen and (max-width:694px){
+   .portfolio{
+    margin-top: 3rem;
+   }
+
+    .portfolio-col {
+        display: block;
+    }
+
+    .portfolio-row{
+        width: 300px;
+        height: 100%;
+        margin: 0 auto;
+        margin-bottom: 2rem;
+    }
+
+    .portfolio-row a{
+        font-size: 1rem;
+        
+    }
+
+    .portfolio h1{
+        font-size: 1.7rem;
+    
+    }
+}
+
+
+
+
+/* ============ ELEVATOR PITCH ============= */
+
+.elevator{
+    width: 100%;
+    height: 100%;
+    margin: 5rem auto;
+    
+}
+
+.elevator h1{
+    text-align: center;
+    font-size: 2rem;
+    color: #fff;
+    text-transform: uppercase;
+
+}
+
+
+.elevator-statement{
+    width: 90%;
+    margin: 0 auto;
+}
+
+.elevator-statement p{
+    margin: 3rem auto 2rem 0;
+    padding: 2rem 5rem 1rem 5rem;
+    font-size: 1.8rem;
+    font-weight: 100;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+    line-height: 1.7rem;
+}
+
+.elevator-statement p strong{
+    color: #14bc14;
+}
+
+
+
+
+
+
+/* ============ MEDIA QUARIES FOR SMALL SCREENS ================= */
+
+@media screen and (max-width:1024px){
+    .elevator-statement p{
+        font-size: 1.4rem;
+        padding: 2rem;
+    }
+}
+
+
+
+
+
+
+
+
+/* ============ MEDIA QUARIES FOR SMALL SCREENS ================= */
+
+@media screen and (max-width:694px){
+    .elevator-statement p{
+        font-size: 1rem;
+        padding: 2rem;
+    }
+}
+
+
+
+
+
+
+/*=========== BIO =========== */
+.bio-content{
+    width: 100%;
+    margin-top: 0.5rem;
+    text-align: center;
+    padding: 3rem;
+}
+
+.bio-content h1{
+    font-size: 2.5rem;
+    color: #fff;
+}
+
+.bio-content p{
+    font-size:1.5rem;
+    margin-top: 2.5rem;
+    line-height: 2rem;
+    font-weight: 100;
+}
+
+
+
+/*=========== MEDIA QUARIES FOR SMALL SCREENS ============= */
+.bio-content {
+    padding: 1.7rem;
+}
+
+.bio-content h1{
+   font-size: 1.5rem;
+}
+
+.bio-content p{
+    font-size: 1rem;
+    
+ }
